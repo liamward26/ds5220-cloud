@@ -1,5 +1,6 @@
-# ds5220-cloud
-Advanced Cloud Computing
+# DS5220 Advanced Cloud Computing
+
+[**Canvas**](https://canvas.its.virginia.edu/courses/173702)
 
 ## Labs
 
