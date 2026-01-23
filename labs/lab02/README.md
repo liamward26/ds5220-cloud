@@ -275,7 +275,7 @@ AMI_ID=$(aws ec2 describe-images \
   --region us-east-1)
 
 echo "Using AMI: $AMI_ID"
-export $AMI_ID
+export AMI_ID
 ```
 
 ### Step 2: Create a Reusable SSH Security Group
