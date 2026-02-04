@@ -4,6 +4,10 @@ An intensive overview of cloud infrastructure and their role in data science. To
 
 [**S26 Canvas**](https://canvas.its.virginia.edu/courses/173702)
 
+## Class Content
+
+- [**EC2 Bootstrapping**](reference-iac/bootstrapping/README.md)
+
 ## Labs
 
 ### Required (all students)

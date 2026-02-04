@@ -1,0 +1,7 @@
+#!/bin/bash
+
+snap install docker
+sleep 10
+cd /home/ubuntu
+curl -s https://raw.githubusercontent.com/uvasds-systems/ds5220-cloud/refs/heads/main/reference-iac/kafka/docker-compose.yaml > docker-compose.yaml
+docker compose up -d
