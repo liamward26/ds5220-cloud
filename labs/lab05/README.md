@@ -28,7 +28,7 @@ By the end of this lab, you will be able to:
 
 ## Prerequisites
 
-- AWS Academy account with appropriate permissions (EC2, SNS, S3)
+- Personal AWS account
 - SSH client and key pair for EC2 access
 - AWS CLI configured on your local machine (for testing)
 - Basic familiarity with Python and REST APIs
