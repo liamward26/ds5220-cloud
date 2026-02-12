@@ -31,7 +31,7 @@ aws s3 mb s3://YOUR-BUCKET/
 
 Be sure to specify your bucket name in the following code snippets.
 
-Launch the DuckDB CLI and create a local database file. This file will store your schemas, view definitions, and file pointers (the **Metadata Store**).
+Install the [**DuckDB CLI**](https://duckdb.org/install/) locally if needed. Launch the DuckDB CLI and create a local database file. This file will store your schemas, view definitions, and file pointers (the **Metadata Store**).
 
 ```bash
 duckdb weather_lake.duckdb
