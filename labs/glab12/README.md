@@ -152,7 +152,39 @@ GROUP BY city;
 
 ---
 
-## 7. Cleanup 
+## 7. Submission
+
+Compile the following into **one PDF** and submit according to your course instructions.
+
+1. **S3 bucket structure**  
+   A screenshot or text output of your bucket layout after completing Sections 3–5 (e.g. `aws s3 ls s3://YOUR-BUCKET/ --recursive` or the S3 console tree view). Ensure the `bronze/v1/`, `silver/v2/`, and `silver/v3_partitioned/` paths are visible.
+
+2. **Bronze/Silver verification**  
+   A screenshot or copy-paste of the result of:
+   ```sql
+   SELECT * FROM silver.weather_v2 LIMIT 5;
+   ```
+   (or the first few rows from `silver.weather_v1` if you prefer).
+
+3. **GLOB query result**  
+   A screenshot or copy-paste of the output of the Section 5 Step B query (average temperature by city from the partitioned data):
+   ```sql
+   SELECT city, ROUND(AVG(temp_c), 2) as avg_temp
+   FROM 's3://YOUR-BUCKET/silver/v3_partitioned/**/*.parquet'
+   GROUP BY city;
+   ```
+
+4. **Knowledge Check**  
+   Brief answers to the five questions in Section 6 (you may type them in the PDF or paste from a separate document).
+
+5. **DuckDB catalog (optional)**  
+   A screenshot or output of `SHOW TABLES;` or `SHOW ALL TABLES;` from your DuckDB session to show the registered views/schemas.
+
+Name your file something like `glab12-lastname-firstname.pdf` (or as specified by your instructor).
+
+---
+
+## 8. Cleanup 
 
 ```bash
 aws s3 rm s3://YOUR-BUCKET/ --recursive
