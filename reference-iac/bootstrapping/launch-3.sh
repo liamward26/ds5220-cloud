@@ -7,5 +7,5 @@ aws ec2 run-instances \
   --count 1 \
   --instance-type t3.large \
   --key-name ds5220 \
-  --security-group-ids sg-066412c1406b41de3 \
+  --security-group-ids sg-00b9cc4613b92cdef \
   --user-data file://bootstrap-3.sh
