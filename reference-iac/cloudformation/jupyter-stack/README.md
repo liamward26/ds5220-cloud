@@ -12,3 +12,5 @@ Objectives:
     - Format/mount secondary volume
     - Run JupyterLab
 7. Test! `http://IPADDRESS:8888/lab?token=my-token`
+
+> [**Template**](./ec2-with-jupyter-and-bucket.yaml)
